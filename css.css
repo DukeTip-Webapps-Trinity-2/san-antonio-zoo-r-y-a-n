@@ -9,7 +9,28 @@ body{
 .that{
     font-size: 20px
 }
-
+footer{
+    color: rgb(175, 12, 12);
+  }
+  footer a{
+    color: #bfffff;
+  }
+  footer a:hover{
+    color: white;
+  }
+  
+  .footer-bottom{
+    background: #3d6277;
+    padding: 2em;
+  }
+  .footer-top{
+    background: #2d4958;  
+  }
+  .footer-middle{
+     background: #3d6277;
+    padding-top: 2em;
+    color: white;
+  }
 
 
 

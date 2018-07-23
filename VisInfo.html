@@ -13,7 +13,7 @@ The San Antonio Zoo
 
 
 
-<body class="body">
+<body class="body ">
   <!-- Nav Bar -->
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                                 <a class="navbar-brand" href="index.html"><img src="img/zooo.png" alt="logo"></a>
@@ -34,13 +34,13 @@ The San Antonio Zoo
                                     <li class="nav-item">
                                       <a class="nav-link" href="Events.html">Events</a>
                                     </li>
-                                    \
                                   </ul>
                                 </div>
                               </nav>
                               <h1><strong> Visitor Information <strong></h1>
 
 <br>
+<div style="text-align: left">
 <h3>Ticket Prices</h3>
 <p>For a normal admission, the prices of tickets are:
 <ul>
@@ -53,6 +53,7 @@ The San Antonio Zoo
         <li>Military Discount (Gate only)	$1.00 Off</li>
         <li>Senior Discount (Gate only)	$1.00 Off</li>
 </ul>
+
 
 <!-- Button trigger modal (dont mind this for now)-->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="margin: 10px">
@@ -73,7 +74,7 @@ The San Antonio Zoo
 <h3>Which type of ticket?</h3>
 
                     <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2" checked>
                             <label class="form-check-label" for="exampleRadios1">
                               Fun Day
                             </label>
@@ -97,7 +98,8 @@ The San Antonio Zoo
                               <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Quantity">
                             </div>
                           </form>
-                          <h6 style="font-size: 15px" onmouseover="h()">The prices are shown to the left.</h6>
+                          <h6 style="font-size: 15px">The prices are shown to the left.</h6>
+                          The total cost will be $<span class="price"></span>
             </div>
 
 
@@ -108,9 +110,45 @@ The San Antonio Zoo
           </div>
         </div>
       </div>
+OR
+      <!-- Button trigger modal (dont mind this for now)-->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2" style="margin: 10px">
+    PURCHASE MEMBERSHIPS HERE!
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Purchase Memberships</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+<h3>How many memberships?</h3>
+                <form>
+                        <div class="form-group">
+                          <input type="number" class="form-control" id="formGroupExampleInput3" placeholder="Quantity">
+                        </div>
+                      </form>
+                      <h6 style="font-size: 15px">The prices are shown to the left.</h6>
+                      The total cost will be $<span class="price"></span>/year.
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a class="btn btn-primary" href="NoRealBuy.html" role="button">Proceed with Purchase</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <br>
 <br>
-<!-- Footer -->
+
 <h3>Address</h3>
 <p>3903 North St. Mary's St., San Antonio, Texas 78212</p>
 <p>(on the corner of Tuleta and North St. Mary's)</p>
@@ -123,10 +161,32 @@ The San Antonio Zoo
         <li>Saturday- 9AM-9PM</li>
         <li>Sunday-   9AM-6PM</li>
 </ul>
-<img src="img/ZooP.jpg" alt="image">
 
-                                  
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<br>
+
+    <div class="text-center">
+      <img src="https://www.weather2umbrella.com/wp-content/themes/w2u/image/svg/weather-icons/d13.svg">
+       
+       <h2>The Weather </h2>
+       <div>Weather in :
+           <span class="city-name"></span>
+       </div>
+       <div class="weather"></div>
+       <div class="temp"></div>
+       <div class="country"></div>
+       
+
+
+
+       <img src="img/ZooP.jpg" alt="a map of the San Antonio Zoo">
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
         <script src="JS.js"></script>
